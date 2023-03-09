@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: pink;
+        }
+
+        .box .box-son1 {
+            display: inline-block;
+            /* background-color: red; */
+           margin-left: 50px;
+            width: 50%;
+            height: 50%;
+            border-radius: 50px;
+            border-left: 2px solid #000;
+          
+
+        }
+        .box .box-son2 {
+            display: inline-block;
+            /* background-color: red; */
+           margin-left: 50px;
+           margin-top: -4px;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            border-right: 2px solid black;
+            /* border-radius: 50%左上角 50%右上角 50%右下角 50%左下角; 顺时针*/
+
+          
+
+        }
+        .shadow {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+          
+        }
+        .shadow:hover {
+            box-shadow:  10px 10px 10px 10px rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 165-170 -->
+
+
+    圆角边框<br>
+    border-radius<br>
+
+    举例：
+    <div class="box">
+        <div class="box-son1"></div>
+        <div class="box-son2"></div>
+        
+
+    </div>
+    <img src="images/圆角边框使用.png" alt=""><br>
+    盒子阴影：box-shadow: h-shadow v-shadow blur spread color inset;<br>
+    <img src="images/背景阴影.png" alt="">
+
+
+    <div class="shadow">
+
+
+    </div>
+    文字阴影: text-shadow: h-shadow v-shadow blur color;
+
+
+
+
+
+
+    <div>
+        <div class="div">哈哈哈</div>
+        <div class="div"></div>
+        <div class="div"></div>
+    </div>
+
+
+
+
+  
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            font: 20px/1.5 "微软雅黑";
+            /* font-size: 20px;
+            line-height: 35px; */
+
+        }
+
+        .jvli1 {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+       <!-- 121-135 -->
+
+
+    <div class="line-height">
+        css三大特性：<br>
+
+        层叠性 继承性 优先级<br>
+        1. 层叠性<br>
+        样式冲突 执行就近原则 样式离结构近的执行<br>
+        2. 继承性<br>
+        子标签会继承父标签的样式(主要继承的是和文字相关的样式text-,font-,line-这些元素可以继承，=,以及color属性)<br>
+        行高继承规则：子元素继承的行高为父元素子元素当前像素的行高倍(子元素的字体大小*父元素的行高)<br>
+
+    </div>
+    <div class="jvli1">
+        我的行高通过继承应该是我本身的字体的大小乘以父亲的行高
+
+    </div>
+    <div class="jvli2">
+        我本身没有给定字体大小，但是我的父亲有字体大小，所以我继承了父亲的字体大小为20px，因此我的行高是继承来的字体大小乘以父亲的行高
+    </div>
+    body部分行高<br>
+    <div>
+
+
+        权重<br>
+        权重会叠加，但是没有进位<br>
+        <img src="images/权重.png" alt=""> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

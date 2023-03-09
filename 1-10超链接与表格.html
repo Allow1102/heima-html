@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 21-40 -->
+
+
+    <p>
+        路径的认识与运用
+        相对路径
+        绝对路径
+    </p>
+
+    <p><!-- 超链接 两个属性href="跳转目标" target="目标窗口的弹出方式  self/blank"-->
+        <!-- 空链接用# -->
+        <!-- 外部链接必须加http -->
+        <!-- href里面是压缩包或者文件点击会直接下载该文件 -->
+        <!-- 锚点链接使用id完成，要求在同一界面# -->
+        实例：
+        <a href="#maodian">锚点链接</a>
+
+
+
+
+
+
+    <div id="maodian">锚点链接</div>
+    </p>
+
+
+    <p>注释的使用
+
+        空&nbsp;格&nbsp;的&nbsp;使&nbsp;用&nbsp;
+        小于号：&lt;
+        大于号：&gt;
+    </p>
+
+
+
+    表格标签：
+    <!--
+     <table></table>表格
+     <tr></tr>      行
+     <th></th>      表头    
+     <td></td>      单元格  
+     表格结构标签
+     <thead></thead>表头区域
+     <tbody></tbody>表身区域
+
+    -->
+    <p>表格属性：<br>
+        align(对齐方式)<br>
+        border(表格边框)<br>
+        cellpadding(单元格内容和内边框之间的距离)<br>
+        cellspacing(单元格和单元格之间的距离)<br>
+
+        属性要写到table标签上使用<br>
+    </p>
+
+    表格练习：
+    <table align="center" border="1" cellspacing="0" width="500px" height="249px">
+
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td>.</td>
+                <td>345</td>
+                <td>123</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>盗墓笔记</td>
+                <td>.</td>
+                <td>124</td>
+                <td>675432</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>西游记</td>
+                <td>.</td>
+                <td>212</td>
+                <td>7654</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>东游记</td>
+                <td>.</td>
+                <td>23</td>
+                <td>75645</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>甄嬛传</td>
+                <td>.</td>
+                <td>121</td>
+                <td>7676</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>水浒传</td>
+                <td>.</td>
+                <td>576576</td>
+                <td>1231421</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>三国演义</td>
+                <td>.</td>
+                <td>234</td>
+                <td>7686</td>
+                <td><a href="#">贴吧</a><a href="#">图片</a><a href="#">百科</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>
+        合并单元格两种方式：<br>
+        跨行合并：rowspan="合并单元格的个数"<br>
+        跨列合并：colspan="合并单元格的个数"<br>
+        合并单元格三部曲：<br>
+        1.确定跨行和跨列<br>
+        2.找到目标单元格(跨行找最上侧，跨列找最左侧)，写上合并方式代码、合并数量<br>
+        3.删除多余单元格<br>
+    </p>
+
+    <!-- 合并单元格实例   合并了第一行的三个单元格和第三列的下两个单元格-->
+
+    <table align="center" width="249px" height="249px" border="1" cellspacing="0">
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+
+    <p>
+        列表标签三大类：
+        无序列表(重点)
+        有序列表
+        自定义列表(重点)
+
+
+        无序列表
+        <!-- <ul>
+                 <li>列表项1</li>
+                 <li>列表项2</li>
+                 <li>列表项3</li>
+            </ul> 
+        -->
+        <ul>
+            <li>无序列表</li>
+            <li>无序列表</li>
+            <li>无序列表</li>
+        </ul>
+
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

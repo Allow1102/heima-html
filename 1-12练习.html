@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 51-60 -->
+
+
+
+
+    <form action="url地址" method="get">
+        <!-- submit  提交按钮作用，将表单元素 里面的值 提交给后台服务器 -->
+        <input type="submit" value="提交按钮"><br>
+        <!-- reset 清楚表单中所有的数据 -->
+        <input type="reset" value="重新填写"> <input type="text"><br>
+        <!-- file文件上传按钮 选择文件 -->
+        <input type="file" value="选择文件"><input type="button" value="确定"><br>
+        <!-- label标签为input元素定义标注 
+             label标签用于绑定一个表单元素，当点击<label>标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上，用来增加用户体验 -->
+
+        <!-- label举例  -->
+        <label for="sex">男</label><input type="radio" name="sex" id="sex"><br>
+
+        <!-- 下拉菜单元素select举例 -->
+        <select name="" id="">
+            <option value="">选项1</option>
+            <option value="">选项2</option>
+            <option value="">选项3</option>
+            <option value="">选项4</option>
+            <option value="" selected="selected">选项5</option>
+            <!-- selected可以设置默认选项 -->
+        </select> <br>
+        <!-- 文本域标签textarea举例   常用于留言板,反馈-->
+        <!-- cols为每行可写的字符数,rows为显示行数 (没有用) 通常使用css设计-->
+
+
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+
+
+
+
+
+        注册页面练习:<br>
+        <h4>青春不常在,抓紧谈恋爱</h4>
+
+        <form action="">
+
+
+
+            <table align="left" width="600px">
+
+                <tr>
+                    <!-- 第一行 -->
+                    <td>性别</td>
+                    <td><input type="radio" name="sex" id="man">
+                        <label for="man">男</label>
+                        <input type="radio" name="sex" id="women">
+                        <label for="women">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- 第二行 -->
+                    <td>生日</td>
+                    <td><select name="year" id="">
+                            <option value="" selected="selected">--请选择年--</option>
+                            <option value="">2000年</option>
+                            <option value="">1999年</option>
+                            <option value="">1998年</option>
+                            <option value="">1997年</option>
+                            <option value="">1996年</option>
+                            <option value="">1995年</option>
+                            <option value="">1994年</option>
+                            <option value="">1993年</option>
+                            <option value="">1992年</option>
+                            <option value="">1991年</option>
+                            <option value="">1990年</option>
+                        </select>
+                        <select name="mouth" id="">
+                            <option value="" selected="selected">--请选择月--</option>
+                            <option value="">1月</option>
+                            <option value="">2月</option>
+                            <option value="">3月</option>
+                            <option value="">4月</option>
+                            <option value="">5月</option>
+                            <option value="">6月</option>
+                            <option value="">7月</option>
+                            <option value="">8月</option>
+                            <option value="">9月</option>
+                            <option value="">10月</option>
+                            <option value="">11月</option>
+                            <option value="">12月</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="" selected="selected">--请选择日--</option>
+                            <option value=""> 1日</option>
+                            <option value=""> 2日</option>
+                            <option value=""> 3日</option>
+                            <option value=""> 4日</option>
+                            <option value=""> 5日</option>
+                            <option value=""> 6日</option>
+                            <option value=""> 7日</option>
+                            <option value=""> 8日</option>
+                            <option value=""> 9日</option>
+                            <option value=""> 10日 </option>
+                            <option value=""> 11日 </option>
+                            <option value=""> 12日</option>
+                            <option value=""> 13日 </option>
+                            <option value=""> 14日 </option>
+                            <option value=""> 15日 </option>
+                            <option value=""> 16日 </option>
+                            <option value=""> 17日 </option>
+                            <option value=""> 18日 </option>
+                            <option value=""> 19日 </option>
+                            <option value=""> 20日 </option>
+                            <option value=""> 21日 </option>
+                            <option value=""> 22日 </option>
+                            <option value=""> 23日 </option>
+                            <option value=""> 24日 </option>
+                            <option value=""> 25日 </option>
+                            <option value=""> 26日 </option>
+                            <option value=""> 27日 </option>
+                            <option value=""> 28日 </option>
+                            <option value=""> 29日 </option>
+                            <option value=""> 30日 </option>
+                            <option value=""> 31日 </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- 第三行 -->
+                    <td>所在地区</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                   <!-- 第四行 -->
+                    <td>婚姻状况</td>
+                    <td>
+                        <input type="radio" id="hunyin" name="hunyin">
+                        <label for="hunyin">未婚</label>
+                        <input type="radio" id="yihun" name="hunyin">
+                        <label for="yihun">已婚</label>
+                        <input type="radio" id="lihun" name="hunyin">
+                        <label for="lihun">离婚</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- 第五行 -->
+                    <td>学历</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                     <!-- 第六行 -->
+                    <td>喜欢的类型</td>
+                    <td>
+                        <input name="leixing" type="checkbox" id="wumeide">
+                        <label for="wumeide">妩媚的</label>
+                        <input name="leixing" type="checkbox" id="keaide">
+                        <label for="keaide">可爱的</label>
+                        <input name="leixing" type="checkbox" id="xiaoxianrou">
+                        <label for="xiaoxianrou">小鲜肉</label>
+                        <input name="leixing" type="checkbox" id="laolarou">
+                        <label for="laolarou">老腊肉</label>
+                        <input name="leixing" type="checkbox" id="all">
+                        <label for="all">都喜欢</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <!-- 第七行 -->
+                    <td>自我介绍</td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                     <!-- 第八行 -->
+                    <td></td>
+                    <td><input type="submit" value="免费注册"></td>
+                </tr>
+                <tr>
+                      <!-- 第九行 -->
+                    <td></td>
+                    <td> <input type="checkbox" checked="checked">我同意注册条款和会员加入标准</td>
+                </tr>
+                <tr>
+                      <!-- 第十行 -->
+                    <td></td>
+                    <td><a href="#">我是会员,立即登录</a></td>
+                </tr>
+                <tr>
+                    <!-- 第十一行 -->
+                    <td></td>
+                    <td>
+                        <h5> 我承诺</h5>
+                        <ul>
+                            <li>年满18岁、单身</li>
+                            <li>抱着严肃的心态</li>
+                            <li>真诚寻找另一半</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

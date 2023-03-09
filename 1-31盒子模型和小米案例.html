@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .box1 {
+            border-style: solid;
+            border-width: 2px;
+            border-color: blanchedalmond;
+
+        }
+
+        .box2 {
+
+            border-color: red;
+            border-width: 5px;
+            border-style: solid;
+            width: 200px;
+            height: 200px;
+            /* background-color: pink; */
+        }
+
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            /* border: 1px solid black; */
+            overflow: hidden;
+
+        }
+
+        .son1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+            border: 1px soild transparent;
+            margin-top: 50px;
+        }
+
+        .son2 {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* margin-top: 30px; */
+        }
+
+        .anli {
+            width: 400px;
+            height: 565px;
+            /* background-color: rgba(0, 0, 0, .5); */
+            margin: auto;
+            border: 1px solid #a1a5a1;
+            margin-bottom: 100px;
+            /* overflow: hidden; */
+            /* box-shadow: 10px 10px 10px 10px gray outset; */
+        }
+
+        .anli img {
+            width: 100%;
+
+        }
+
+
+
+
+        .anli .p1 {
+            padding: 0 35px;
+            margin-top: 40px;
+            margin-bottom: 100px;
+
+        }
+
+        .anli .span1 {
+            display: block;
+            color: #a1a5a1;
+            font-size: 16px;
+            text-align: left;
+            padding-left: 35px;
+
+
+
+        }
+
+        .anli .span1 a {
+            text-decoration: none;
+            color: #a1a5a1;
+        }
+
+        .anli .h4 {
+            display: inline-block;
+            padding-left: 35px;
+            margin-top: 18px;
+            font-size: 17px;
+            padding-right: 15px;
+            font-weight: normal;
+
+
+        }
+
+        .anli .span3 {
+            display: inline-block;
+            padding-left: 10px;
+            font-size: 17px;
+            border-left: 2px solid #a1a5a1;
+
+        }
+
+        .anli .span3 a {
+            color: #ee7f3b;
+
+        }
+
+        .anli2 {
+            width: 450px;
+            height: 292px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+
+        }
+
+        .anli2 .nav {
+            border-bottom: 1px dotted black;
+            height: 57px;
+            line-height: 57px;
+            padding-left: 28px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .anli2 .div1 {
+            padding-left: 30px;
+            margin-top: 22px;
+            font-size: 20px;
+
+
+        }
+
+        .anli2 .div {
+            margin-top: 16px;
+            padding-left: 30px;
+            font-size: 20px;
+
+        }
+
+        .anli2 a {
+            color: #666;
+
+        }
+
+        .anli2 a {
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 136-164 -->
+
+    <div class="box1">
+        盒子的组成：<br>
+        border边框: 复合写法border: 1px solid red; 没有顺序 有上下左右边框 border-top; bottom; left; right<br>
+        border-color边框颜色 <br>
+        border-style: <br>
+        <img src="images/边框样式.png" alt=""><br>
+
+        content内容<br>
+        padding内边距<br>
+        padding-top;left;bottom;right.<br>
+        复合写法<br>
+        <img src="images/padding复合写法.png" alt="">
+
+        margin外边距<br>
+        margin-top;left;bottom;right.<br>
+        复合写法等同于padding<br>
+
+    </div>
+    <div class="box2">
+
+
+
+    </div>
+
+    <div>
+        表格细线边框
+        border-coollapse:coollapse<br>
+        coollapse单词是合并,表示相邻边框合并在一起<br>
+
+
+
+
+
+
+    </div>
+    外边距使盒子水平居中<br>
+    <img src="images/水平居中.png" alt="">
+    嵌套块元素垂直外边距塌陷<br>
+    解决方案<br>
+    <img src="images/塌陷解决方案.png" alt="">
+
+
+
+
+
+    <div class="father">
+        <div class="son1">
+            hahha
+        </div>
+        <div class="son2">
+            12312123
+        </div>
+    </div>
+
+
+
+    pre保留预文本格式<br>
+    <pre>
+<code>
+    清除内外边距
+* {
+    margin: 0;
+    padding: 0;
+}
+</code>
+</pre>
+
+    ps简单操作<br>
+    <img src="images/ps.png" alt=""><br>
+    案例1
+    <div class="anli">
+
+        <img src="images/anli.png" alt="">
+
+        <p class="p1">
+            <a href="#">快递牛，整体不错蓝牙可以说秒连。红米给力</a>
+        </p>
+
+
+
+
+        <span class="span1">
+            <a href="#">来自于117384232的评价 </a>
+        </span>
+
+        <h4 class="h4">
+            <a href="#">Redmi AirDots真无线蓝... </a>
+        </h4>
+
+
+        <span class="span3">
+            <a href="#">99.9元 </a>
+        </span>
+
+
+
+
+    </div>
+
+    <div>
+        嵌套规则<br>
+        <img src="images/嵌套规则.png" alt="">
+    </div>
+    <div>
+        总结<br>
+
+        <img src="images/2-1总结.png" alt="">
+    </div>
+    案例2<br>
+
+
+
+
+    <div class="anli2">
+        <h4 class="nav">
+            品优购快报
+        </h4>
+        <!-- 用列表做 -->
+        <div class="div1"><a href="#">【特惠】爆款耳机5折秒! </a></div>
+        <div class="div"> <a href="#">【特惠】母亲节，健康好礼低至5折!</a> </div>
+        <div class="div"> <a href="#">【特惠】爆款耳机5折秒! </a></div>
+        <div class="div"> <a href="#">【特惠】9.9元洗100张照片! </a></div>
+        <div class="div"> <a href="#">【特惠】长虹智能空调立省1000 </a> </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

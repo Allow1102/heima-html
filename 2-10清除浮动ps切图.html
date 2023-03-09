@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 1.额外标签法 */
+
+    .box1 {
+        width: 800px;
+        margin: 0 auto;
+        background-color: pink;
+        border: 2px solid red;
+    }
+
+    .damo1 {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+
+    .clear {
+
+        clear: both;
+    }
+
+    /* 2.父级添加overflow属性 */
+    .box2 {
+        border: 2px solid red;
+        margin: 0 auto;
+        width: 800px;
+        overflow: auto;
+    }
+
+    .damo2 {
+        float: left;
+        width: 200px;
+        height: 200px;
+
+        background-color: skyblue;
+
+    }
+
+    /* 
+    3.父级添加after伪元素
+    额外标签法升级版本  */
+    .box3 {
+        width: 800px;
+        margin: 0 auto;
+        background-color: pink;
+        border: 2px solid red;
+    }
+
+    .damo3 {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+
+    .box3:after {
+
+        content: "";
+        display: block;
+        height: 0;
+
+        clear: both;
+        visibility: hidden;
+    }
+
+    .box3::after {
+        /* IE6/7专用 */
+        *zoom: 1;
+    }
+
+
+    /* 父级添加双伪元素 */
+
+    .box4 {
+        border: 2px solid red;
+        margin: 0 auto;
+        width: 800px;
+        overflow: auto;
+    }
+
+    .damo4 {
+        float: left;
+        width: 200px;
+        height: 200px;
+
+        background-color: skyblue;
+
+    }
+
+    .box4:before,
+    .box4:after {
+
+        content: "";
+        display: table;
+    }
+
+
+    .box4 {
+        clear: both;
+       
+    }
+
+    .box4 {
+        /* IE6/7专用 */
+        *zoom: 1;
+    }
+</style>
+
+<body>
+
+
+183-
+
+
+    浮动只会影响后面的标准流<br>
+
+
+
+    清除浮动的引导问题<img src="images/清除浮动.png" alt=""><br>
+
+
+    父盒子本身有高度，所以要清除浮动<br>
+    清除浮动的本质：
+    <br>
+
+    清除浮动的方法：<br>
+    1.额外标签法<img src="images/清除浮动方法.png" alt=""><br>
+    <img src="images/清除浮动方法4.png" alt="">
+
+    <!-- 1.额外标签法 -->
+    <div class="box1">
+        <div class="damo1"></div>
+        <div class="damo1"></div>
+        <div class="damo1"></div>
+        <div class="damo1"></div>
+        <div class="damo1"></div>
+        <div class="damo1"></div>
+        <div class="clear"></div>
+    </div>
+
+
+    <!-- 
+        2.父级添加overflow属性
+    
+    -->
+    <!-- 
+        优点：代码简洁
+        缺点： 无法显示溢出部分
+    -->
+
+    <div class="box2">
+        <div class="damo2"></div>
+        <div class="damo2"></div>
+        <div class="damo2"></div>
+        <div class="damo2"></div>
+        <div class="damo2"></div>
+        <div class="damo2"></div>
+    </div>
+
+    <!-- 3.父级添加after伪元素 -->
+    <!-- 额外标签法升级版本 -->
+
+
+
+    <div class="box3">
+        <div class="damo3"></div>
+        <div class="damo3"></div>
+        <div class="damo3"></div>
+        <div class="damo3"></div>
+        <div class="damo3"></div>
+        <div class="damo3"></div>
+    </div>
+
+
+
+    <!-- 父级添加双伪元素 -->
+    <div class="box4">
+        <div class="damo4"></div>
+        <div class="damo4"></div>
+        <div class="damo4"></div>
+        <div class="damo4"></div>
+        <div class="damo4"></div>
+        <div class="damo4"></div>
+    </div>
+
+
+    after伪元素标签法<img src="images/清除浮动伪元素.png" alt="">
+
+    双伪元素标签法<img src="images/双伪元素清除浮动.png" alt=""><br>
+
+
+
+    PS切图：
+    图层切图<br>
+    切片切图<br>
+    PS插件切图(Cutterman)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

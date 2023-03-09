@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        .anli1 {
+            width: 1440px;
+            height: 348px;
+            background-color: #fcfffc;
+            margin: 0 auto;
+
+        }
+
+        .right {
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+
+
+
+        }
+
+        .xiaomi {
+            width: 1440px;
+            height: 348px;
+            background-color: #fcfffc;
+            margin: 0 auto;
+        }
+
+        .xiaomi div:hover {
+
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+        }
+
+        .box1,
+        .anli1 .li1 {
+            width: 341px;
+            height: 328px;
+            float: left;
+            margin-left: 15px;
+            background-repeat: no-repeat;
+
+            background-image: url(images/2-8xiaomi.png);
+
+        }
+
+        .box2,
+        .anli1 .li2 {
+            width: 341px;
+            height: 328px;
+            float: left;
+            margin-left: 15px;
+            background-repeat: no-repeat;
+            background-image: url(images/2-8xiaomi2.png);
+
+        }
+
+        .box3,
+        .anli1 .li3 {
+            width: 341px;
+            height: 328px;
+            float: left;
+            margin-left: 15px;
+            background-repeat: no-repeat;
+            background-image: url(images/2-8xiaomi3.png);
+
+        }
+
+        .box4,
+        .anli1 .li4 {
+            width: 341px;
+            height: 328px;
+            float: left;
+            margin-left: 15px;
+            background-repeat: no-repeat;
+            background-image: url(images/2-8xiaomi4.png);
+
+
+        }
+
+        .xiaomi h4,
+        .anli1 li h4 {
+
+            text-align: center;
+            margin-top: 240px;
+            font-size: 16px;
+
+
+        }
+
+        .xiaomi span,
+        ul li span {
+            display: block;
+            text-align: center;
+            color: grey;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+
+
+
+
+        .box {
+            width: 1227px;
+            height: 614px;
+            margin: 50px auto;
+
+
+
+        }
+
+        .left {
+
+            float: left;
+            width: 235px;
+            height: 614px;
+            /* padding: auto; */
+            background-color: blue;
+
+        }
+
+        .left:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+
+
+
+        }
+
+        .right {
+            display: inline-block;
+            /* float: right; */
+            width: 992px;
+            height: 614px;
+        }
+
+        .box .right li {
+            width: 234px;
+            height: 300px;
+            float: right;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            margin-left: 14px;
+            margin-bottom: 14px;
+
+        }
+
+        .box .right li img {
+
+            margin-top: 20px;
+            margin-left: 37px;
+        }
+
+        .right li h4 {
+
+            margin-top: 13px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: normal;
+
+        }
+
+        .right li p {
+            margin-top: 3px;
+            text-align: center;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .right li span {
+            color: #ff6f08;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- 171- 182-->
+
+    传统网页布局三种方式：
+    普通流(按照标签默认特性进行布局)<br>
+    浮动<br>
+    定位<br>
+
+    浮动：可以让多个块级元素成行排列
+
+    <img src="images/       浮动.png" alt="">
+    浮动特性<br>
+    <img src="images/浮动特性.png" alt="">
+    案例1：<br>
+    <div class="xiaomi">
+        <div class="box1">
+            <h4>小米CC9</h4>
+            <span>深蓝星球</span>
+        </div>
+        <div class="box2">
+
+            <h4>Redmi&nbsp;Note&nbsp;7系列</h4>
+            <span>镜花水月</span>
+        </div>
+        <div class="box3">
+            <h4>黑鲨游戏手机2&nbsp;Pro</h4>
+            <span>指尖主宰发布会</span>
+        </div>
+        <div class="box4">
+            <h4>小米手环4</h4>
+            <span>改变从今开始</span>
+        </div>
+
+
+    </div>
+
+    <ul class="anli1">
+        <li class="li1">
+            <h4>小米CC9</h4>
+            <span>深蓝星球</span>
+
+        </li>
+        <li class="li2">
+            <h4>Redmi&nbsp;Note&nbsp;7系列</h4>
+            <span>镜花水月</span>
+
+        </li>
+        <li class="li3">
+
+            <h4>黑鲨游戏手机2&nbsp;Pro</h4>
+            <span>指尖主宰发布会</span>
+        </li>
+        <li class="li4">
+            <h4>小米手环4</h4>
+            <span>改变从今开始</span>
+
+        </li>
+    </ul>
+
+    案例2：
+    <div class="box">
+
+        <ul class="left">
+
+            <img src="images/2-8案例2/Snipaste_2023-02-08_16-47-01.png" alt="">
+        </ul>
+        <ul class="right">
+            <li class="li1">
+                <img src="images/2-8案例2/4.png" alt="">
+                <h4>Redmi&nbsp;Note&nbsp;12&nbsp;pro&nbsp;极速版 </h4>
+                <p> 高通骁龙778G,OLED柔性直屏+一亿...</p>
+                <span>1699元起 </span>
+
+            </li>
+            <li class="li2">
+
+                <img src="images/2-8案例2/3.png" alt="">
+                <h4> Redmi&nbsp;K60&nbsp;</h4>
+                <p> 【第二代骁龙8】&nbsp;狂暴引擎</p>
+                <span> 3299元起</span>
+            </li>
+            <li class="li3">
+                <img src="images/2-8案例2/2.png" alt="">
+                <h4> Redmi&nbsp;K60</h4>
+                <p>骁龙8+&nbsp;|&nbsp;2K&nbsp;高光直屏&nbsp;|&nbsp;5500mAh+67...</p>
+                <span>2499元起 </span>
+            </li>
+            <li class="li4">
+                <img src="images/2-8案例2/1.png" alt="">
+                <h4> Redmi&nbsp;12C</h4>
+                <p>高性能长续航，5000万像素超清双摄 </p>
+                <span>699元起 </span>
+
+
+
+            </li>
+            <li class="li5">
+                <img src="images/2-8案例2/8.png" alt="">
+
+                <h4>Redmi&nbsp;Note&nbsp;12&nbsp;5G</h4>
+                <p> 三星OLED护眼屏 &nbsp;|&nbsp;骁龙5G芯&nbsp;|&nbsp; 50...</p>
+                <span> 1199元起</span>
+            </li>
+            <li class="li6">
+                <img src="images/2-8案例2/7.png" alt="">
+                <h4> Xiaomi&nbsp;13</h4>
+
+
+                <p> 全新第二代骁龙&nbsp;|&nbsp;徕卡专业光学镜头</p>
+                <span> 3999元起</span>
+
+
+            </li>
+            <li class="li7">
+                <img src="images/2-8案例2/6.png" alt="">
+                <h4>Xiaomi&nbsp;13&nbsp;Pro</h4>
+                <p> 全新第二代骁龙8&nbsp;|&nbsp;徕卡专业光学镜头...</p>
+                <span> 4999元起</span>
+            </li>
+            <li class="li8">
+                <img src="images/2-8案例2/5.png" alt="">
+
+
+                <h4>Xiaomi&nbsp;13&nbsp;限量定制色 </h4>
+                <p> 全新第二代骁龙8&nbsp;|&nbsp; 徕卡专业光学镜头... </p>
+                <span class="orange"> 4999元</span>
+
+            </li>
+        </ul>
+
+
+
+
+
+    </div>
+
+
+    <style>
+        .top {
+            height: 100px;
+            background-color: grey;
+            margin-bottom: 10px;
+        }
+
+        .banner {
+            height: 200px;
+            width: 1200px;
+            background-color: grey;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+
+        .body1 {
+            width: 1200px;
+            height: 180px;
+            /* background-color:grey; */
+            margin: 10px auto;
+        }
+
+        .body2 {
+
+            width: 1200px;
+            height: 320px;
+            margin: 10px auto;
+            /* background-color: grey; */
+        }
+
+        .footer {
+            height: 500px;
+            margin: 10px auto;
+        }
+
+        .body1 .div {
+            float: left;
+            margin-right: 5px;
+            width: 296.25px;
+            height: 200px;
+            background-color: grey;
+            margin-bottom: 10px;
+
+        }
+
+        .body2 .div {
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            width: 296.25px;
+            height: 300px;
+            background-color: grey;
+            margin-bottom: 10px;
+
+
+        }
+
+        .lastdiv {
+
+            margin-right: 0 !important;
+        }
+
+        .footer {
+            height: 300px;
+            background-color: grey;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="top"></div>
+    <div class="banner"></div>
+    <div class="body1">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div lastdiv"></div>
+    </div>
+    <div class="body2">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div lastdiv"></div>
+    </div>
+    <div class="footer">
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
